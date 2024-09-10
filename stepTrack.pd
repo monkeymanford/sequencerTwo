@@ -80,7 +80,7 @@
 #X msg 783 370 67;
 #X msg 851 370 69;
 #X msg 919 370 71;
-#X text 119 21 track;
+#X text 95 -74 track;
 #X obj 239 418 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X obj 193 418 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X obj 239 455 f \$1;
@@ -99,14 +99,14 @@
 #X obj 685 472 s key\$1;
 #X obj 215 69 r key\$1;
 #X obj 458 110 inlet;
-#X obj 278 311 loadbang;
-#X msg 279 340 0;
+#X obj 279 294 loadbang;
+#X msg 279 323 0;
 #X obj 324 109 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X obj 324 138 symbol \$2;
 #X obj 324 168 print;
 #X obj 76 448 s \$2Wave;
-#X obj 142 69 r \$2Trigs;
-#X obj 192 287 r \$2Load;
+#X obj 149 -33 r \$2Trigs;
+#X obj 193 262 r \$2Load;
 #X obj 1137 195 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X floatatom 1137 248 5 0 0 0 - - - 0;
 #X obj 1138 309 spigot;
@@ -166,6 +166,10 @@
 #X msg 1343 371 79;
 #X msg 1411 371 81;
 #X msg 1479 371 83;
+#X msg 149 -2 \$1;
+#X msg 188 -2 \$2;
+#X obj 149 50 spigot;
+#X obj 188 23 != 0;
 #X connect 0 0 2 0;
 #X connect 1 0 0 1;
 #X connect 1 0 96 0;
@@ -272,7 +276,8 @@
 #X connect 101 0 96 1;
 #X connect 102 0 103 0;
 #X connect 103 0 104 0;
-#X connect 106 0 5 0;
+#X connect 106 0 167 0;
+#X connect 106 0 168 0;
 #X connect 107 0 96 0;
 #X connect 108 0 143 0;
 #X connect 109 0 153 0;
@@ -350,3 +355,7 @@
 #X connect 164 0 149 0;
 #X connect 165 0 149 0;
 #X connect 166 0 149 0;
+#X connect 167 0 169 0;
+#X connect 168 0 170 0;
+#X connect 169 0 5 0;
+#X connect 170 0 169 1;
