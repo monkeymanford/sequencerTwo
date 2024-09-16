@@ -1,14 +1,14 @@
-#N canvas 142 201 966 518 12;
+#N canvas 198 141 846 384 12;
 #X floatatom 96 212 5 0 0 0 - - - 0;
 #X obj 96 245 sel 61 60 62 63 64 65 67 69 71 73 72 74 75 76 77 79 81 83;
 #X obj 96 184 r notes;
-#X obj 646 154 r encbut;
-#X obj 535 259 spigot;
-#X obj 646 214 == 0;
-#X floatatom 646 185 5 0 0 0 - - - 0;
+#X obj 746 138 r encbut;
+#X obj 707 226 spigot;
+#X obj 746 198 == 0;
+#X floatatom 746 169 5 0 0 0 - - - 0;
 #X floatatom 556 302 5 0 0 0 - - - 0;
-#X obj 596 113 loadbang;
-#X msg 597 140 0;
+#X obj 696 97 loadbang;
+#X msg 697 124 0;
 #X obj 101 553 sel 61 60 62 63 64 65 67 69 71 73 72 74 75 76 77 79 81 83;
 #X obj 102 413 r notes;
 #X obj 579 468 r encbut;
@@ -25,7 +25,9 @@
 #X obj 540 644 s toneSelectKeys;
 #X obj 926 872;
 #X obj 604 320 s trackSelectKeys;
-#X text 676 114 add to separate selectors;
+#X text 776 98 add to separate selectors from track selection;
+#X msg 604 261 66;
+#X obj 604 224 loadbang;
 #X connect 0 0 1 0;
 #X connect 1 18 7 0;
 #X connect 2 0 0 0;
@@ -47,3 +49,5 @@
 #X connect 18 0 20 0;
 #X connect 19 0 10 0;
 #X connect 20 0 19 1;
+#X connect 27 0 25 0;
+#X connect 28 0 27 0;

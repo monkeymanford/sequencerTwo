@@ -1,4 +1,4 @@
-#N canvas 591 58 1082 821 12;
+#N canvas 909 38 467 821 12;
 #X obj 78 455 spigot;
 #X obj 172 380 tgl 25 0 empty empty empty 0 -10 0 12 #ff0400 #000000 #000000 0 1;
 #X obj 78 491 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
@@ -142,15 +142,15 @@
 #X msg 785 706 79;
 #X msg 832 706 81;
 #X msg 879 706 83;
-#X msg 182 134 \$1;
-#X msg 221 134 \$2;
-#X obj 182 186 spigot;
-#X obj 221 159 != 0;
+#X msg 182 116 \$1;
+#X msg 221 116 \$2;
+#X obj 182 193 spigot;
+#X obj 221 141 != 0;
 #X text 172 36 step track;
 #X text 550 90 1 - 8;
 #X text 554 480 9 - 16;
 #X text 584 30 initialize which key toggles which step;
-#X obj 203 86 r \$2Toggles;
+#X obj 181 69 r \$2Toggles;
 #X connect 0 0 2 0;
 #X connect 1 0 0 1;
 #X connect 1 0 78 0;
@@ -328,5 +328,5 @@
 #X connect 144 0 146 0;
 #X connect 145 0 5 0;
 #X connect 146 0 145 1;
-#X connect 151 0 143 0;
 #X connect 151 0 144 0;
+#X connect 151 0 143 0;
