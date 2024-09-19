@@ -1,4 +1,4 @@
-#N canvas 909 38 467 821 12;
+#N canvas 578 37 483 821 12;
 #X obj 78 455 spigot;
 #X obj 172 380 tgl 25 0 empty empty empty 0 -10 0 12 #ff0400 #000000 #000000 0 1;
 #X obj 78 491 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
@@ -83,7 +83,7 @@
 #X obj 312 430 loadbang;
 #X msg 312 459 0;
 #X obj 78 585 s \$2Wave;
-#X obj 226 398 r \$2Load;
+#X obj 226 412 r \$2Load;
 #X obj 642 530 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X floatatom 642 583 5 0 0 0 - - - 0;
 #X obj 643 644 spigot;
