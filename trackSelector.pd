@@ -1,4 +1,4 @@
-#N canvas 291 52 1470 834 12;
+#N canvas 0 52 1470 834 12;
 #X obj -183 130 tgl 40 0 empty empty empty 0 -10 0 12 #c7c6ff #000000 #000000 0 1;
 #X obj -84 112 == 66;
 #X obj 343 124 tgl 40 0 empty empty empty 0 -10 0 12 #ff0400 #000000 #000000 0 1;
@@ -76,6 +76,16 @@
 #X msg 277 627 . T .. O .. M .. A .;
 #X msg -144 291 \\\\ B ... O ... O ... M;
 #X msg 412 249 S .. H .. A .. K .. A;
+#X obj 633 559 tgl 40 0 empty empty empty 0 -10 0 12 #faff00 #000000 #000000 0 1;
+#X obj 693 579 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
+#X obj 693 556 spigot;
+#X obj 696 658 s screenLine1;
+#X obj 688 452 r trackSelectKeys;
+#X obj 562 673 r knobs;
+#X obj 594 715 spigot;
+#X obj 560 755 s tKnobs;
+#X obj 689 502 == 82;
+#X msg 694 629 . W . o . O . o . W .;
 #X connect 0 0 5 1;
 #X connect 0 0 29 1;
 #X connect 1 0 0 0;
@@ -149,3 +159,13 @@
 #X connect 74 0 46 0;
 #X connect 75 0 17 0;
 #X connect 76 0 18 0;
+#X connect 77 0 83 1;
+#X connect 78 0 86 0;
+#X connect 79 0 78 0;
+#X connect 81 0 85 0;
+#X connect 82 0 83 0;
+#X connect 83 0 84 0;
+#X connect 85 0 77 0;
+#X connect 85 0 79 1;
+#X connect 85 0 79 0;
+#X connect 86 0 80 0;
